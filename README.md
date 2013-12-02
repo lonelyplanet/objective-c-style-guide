@@ -37,6 +37,7 @@ Here are some of the documents from Apple that informed the style guide. If some
 * [Booleans](#booleans)
 * [Singletons](#singletons)
 * [Xcode Project](#xcode-project)
+  * [Core Data Model Files](#core-data-model-files) 
 
 ## Dot-Notation Syntax
 
@@ -452,6 +453,10 @@ The physical files should be kept in sync with the Xcode project files in order 
 **TODO: Point to a canonical example project**
 
 When possible, always turn on "Treat Warnings as Errors" in the target's Build Settings and enable as many [additional warnings](http://boredzo.org/blog/archives/2009-11-07/warnings) as possible. If you need to ignore a specific warning, use [Clang's pragma feature](http://clang.llvm.org/docs/UsersManual.html#controlling-diagnostics-via-pragmas).
+
+### Core Data Model Files
+
+The current core data model file should not contain a version specific identifier. When adding new model versions, the current model file should be renamed to include the current version of the app, and a new model file added without any version specific identifier. This strategy makes it simple to identify which model versions belong to which versions of app releases.
 
 # Other Objective-C Style Guides
 
