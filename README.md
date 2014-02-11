@@ -32,7 +32,7 @@ Here are some of the documents from Apple that informed the style guide. If some
 * [CGRect Functions](#cgrect-functions)
 * [Constants](#constants)
 * [Enumerated Types](#enumerated-types)
-* [Private Properties](#private-properties)
+* [Private Properties and Methods](#private-properties-and-methods)
 * [Image Naming and the Asset Catalog](#image-naming-and-the-asset-catalog)
 * [Booleans](#booleans)
 * [Singletons](#singletons)
@@ -187,7 +187,7 @@ UIButton *settingsButton;
 UIButton *setBut;
 ```
 
-A three-letter prefix of `LPM` should always be used for class names and constants, however may be omitted for Core Data entity names. Constants should be camel-case with all words capitalized and prefixed by the related class name for clarity.
+A three-letter prefix should always be used for class names and constants, however may be omitted for Core Data entity names. Constants should be camel-case with all words capitalized and prefixed by the related class name for clarity. Three-letter prefixes should be created on a per-project basis, and used for that project. For instance, Postcards uses the `PCA` prefix. Code that is intended to be used in a cross-app manner (e.g. code that's part of a private CocoaPod) should be prefixed with `LPM`.
 
 **For example:**
 
@@ -329,7 +329,7 @@ typedef NS_ENUM(NSInteger, NYTAdRequestState) {
 
 For more info, see [this NSHipster article](http://nshipster.com/ns_enum-ns_options/).
 
-## Private Properties & Methods
+## Private Properties and Methods
 
 Private properties should be declared in class extensions (anonymous categories) in the implementation file of a class. Named categories (such as `LPMPrivate` or `private`) should never be used unless extending another class.
 
