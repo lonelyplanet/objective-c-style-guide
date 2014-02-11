@@ -345,6 +345,18 @@ Private properties should be declared in class extensions (anonymous categories)
 @end
 ```
 
+**Not:**
+
+```objc
+@interface NYTAdvertisement (Private)
+
+@property (nonatomic, strong) GADBannerView *googleAdView;
+@property (nonatomic, strong) ADBannerView *iAdView;
+@property (nonatomic, strong) UIWebView *adXWebView;
+
+@end
+```
+
 Private methods no longer need to be declared, and can simply be implemented. However, for clarity, all private methods should be implemented beneath a `#pragma mark - Private Methods` to clearly distinguish them from overidden methods of a superclass.
 
 ## Image Naming
@@ -363,26 +375,6 @@ Images that are used for a similar purpose should be grouped in respective group
 Since `nil` resolves to `NO` it is unnecessary to compare it in conditions. Never compare something directly to `YES`, because `YES` is defined to 1 and a `BOOL` can be up to 8 bits.
 
 This allows for more consistency across files and greater visual clarity.
-
-**For example:**
-
-```objc
-if (!someObject)
-{
-	// Do something
-}
-```
-
-**Not:**
-
-```objc
-if (someObject == nil)
-{
-	// Do something
-}
-```
-
------
 
 **For a `BOOL`, here are two examples:**
 
