@@ -233,7 +233,7 @@ Block comments should generally be avoided, as code should be as self-documentin
 
 ```objc
 - (instancetype)init
-- {
+{
     self = [super init]; // or call the designated initalizer
     if (self)
     {
