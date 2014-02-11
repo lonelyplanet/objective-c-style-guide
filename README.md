@@ -327,7 +327,7 @@ typedef NS_ENUM(NSInteger, NYTAdRequestState) {
 };
 ```
 
-**TODO: Insert link here that explains this further.**
+For more info, see [this NSHipster article](http://nshipster.com/ns_enum-ns_options/).
 
 ## Private Properties & Methods
 
