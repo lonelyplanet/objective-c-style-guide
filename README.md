@@ -56,7 +56,7 @@ UIApplication.sharedApplication.delegate;
 
 ## Spacing
 
-* Indent using 4 spaces. Never indent with tabs. Be sure to set this preference in Xcode.
+* Indent with one tab per indentation level. This should be the default setting in Xcode.
 * Method braces and other braces (`if`/`else`/`switch`/`while`/`for` etc.) always open and close on a new line.
 
 **For example:**
