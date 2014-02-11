@@ -2,7 +2,7 @@
 
 *This guide is forked from [The New York Times' Objective-C Style Guide](https://github.com/NYTimes/objective-c-style-guide)*
 
-*This guide expires on 23 October 2014. Please update this expiry date as part of making any changes to guide.*
+*This guide expires on 11 July 2014. Please update this expiry date as part of making any changes to guide.*
 
 This style guide outlines the coding conventions of the iOS team at Lonely Planet. We welcome your feedback in [issues](https://github.com/lonelyplanet/objective-c-style-guide/issues), [pull requests](https://github.com/lonelyplanet/objective-c-style-guide/pulls), and via [Slack](http://lonelyplanet.slack.com).
 
