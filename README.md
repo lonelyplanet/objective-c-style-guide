@@ -33,7 +33,7 @@ Here are some of the documents from Apple that informed the style guide. If some
 * [Constants](#constants)
 * [Enumerated Types](#enumerated-types)
 * [Private Properties](#private-properties)
-* [Image Naming](#image-naming)
+* [Image Naming and the Asset Catalog](#image-naming-and-the-asset-catalog)
 * [Booleans](#booleans)
 * [Singletons](#singletons)
 * [Xcode Project](#xcode-project)
@@ -359,7 +359,7 @@ Private properties should be declared in class extensions (anonymous categories)
 
 Private methods no longer need to be declared, and can simply be implemented. However, for clarity, all private methods should be implemented beneath a `#pragma mark - Private Methods` to clearly distinguish them from overidden methods of a superclass.
 
-## Image Naming
+## Image Naming and the Asset Catalog
 
 Image names should be named consistently to preserve organization and developer sanity. They should be named as one camel case string with a description of their purpose, followed by the un-prefixed name of the class or property they are customizing (if there is one), followed by a further description of color and/or placement, and finally their state.
 
@@ -368,7 +368,7 @@ Image names should be named consistently to preserve organization and developer 
 * `RefreshBarButtonItem` / `RefreshBarButtonItem@2x` and `RefreshBarButtonItemSelected` / `RefreshBarButtonItemSelected@2x`
 * `ArticleNavigationBarWhite` / `ArticleNavigationBarWhite@2x` and `ArticleNavigationBarBlackSelected` / `ArticleNavigationBarBlackSelected@2x`.
 
-Images that are used for a similar purpose should be grouped in respective groups in an Images folder.
+Always use the Assets Catalog for images, grouping all images for a given use (e.g. `RefreshBarButtonItem` / `RefreshBarButtonItem@2x` and `RefreshBarButtonItemSelected` / `RefreshBarButtonItemSelected@2x`) in a given Image Set. More info about Asset Catalogs is available [here](https://developer.apple.com/library/ios/recipes/xcode_help-image_catalog-1.0/Recipe.html).
 
 ## Booleans
 
